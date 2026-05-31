@@ -2,12 +2,6 @@ name: Emergency Pages
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "emergency-site/**"
-      - ".github/workflows/emergency-pages.yml"
 
 permissions:
   contents: read
@@ -39,4 +33,3 @@ jobs:
       - name: Deploy emergency site
         id: deployment
         uses: actions/deploy-pages@v4
-
